@@ -44,7 +44,6 @@ if (isset($_POST['register'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    
     <div class="container mt-5">
         <div class="row">
             <div class="col-lg-6 mx-auto">
@@ -57,7 +56,7 @@ if (isset($_POST['register'])) {
                     <div class="card-body p-4">
                         <h2>Create Account</h2>
                         <p>Enter your details.</p>
-                        <form action="#">
+                        <form action="#" method="POST">
                             <div class="form-group">
                                 <label class="form-label" for="fullname">Full Name 
                                     <span class="text-danger">*</span>
@@ -88,6 +87,7 @@ if (isset($_POST['register'])) {
             </div>
         </div>
     </div>
+
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

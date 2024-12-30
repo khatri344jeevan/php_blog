@@ -1,3 +1,15 @@
+<?php 
+  if(isset($_POST['save'])){
+    $name = $_POST['category-name'];
+    $image = $_POST['category-image'];
+    $details = $_POST['category-details'];
+    if(empty($name)){
+      {
+      echo "Category name is required";
+    }
+    }
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -56,7 +68,7 @@
           <div class="mt-4">
             <div class="card">
               <div class="card-body">
-                <form action="">
+                <form action="#" action="POST">
                   <div class="form-group">
                     <label class="form-label"
                       >Category Name
@@ -65,7 +77,7 @@
                     <input
                       type="text"
                       class="form-control"
-                      name="title"
+                      name="category-name"
                       placeholder="Enter Category Name"
                     />
                   </div>
@@ -78,7 +90,7 @@
                       <input
                         type="file"
                         class="form-control"
-                        name="title"
+                        name="category-image"
                         placeholder="Enter Category Name"
                       />
                     </div>
@@ -91,43 +103,14 @@
                     </label>
                     <textarea
                       class="form-control"
-                      name="content"
-                      id=""
+                      name="category-details"
+                      id="category-details"
                       rows="10"
                       placeholder="Enter Category details "
                     ></textarea>
                   </div>
                   <div class="mt-3">
-                    <label class="form-label"
-                      >Status
-                      <span class="text-danger">*</span>
-                    </label>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault1"
-                      />
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Publish
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault2"
-                        checked
-                      />
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Draft
-                      </label>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary" name="save">
                       Save Category
                     </button>
                   </div>
