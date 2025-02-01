@@ -10,28 +10,30 @@
 </head>
 
 <body>
-
     <div class="container mt-5">
         <div class="row">
-            <div class="col-lg-6 mx-auto">
-                <div class="card">
-                    <div class="card-body p-4">
-                        <div class="mb-4"><i class="bi bi-person me-1 text-white rounded-circle h1 bg-dark py-2 px-3"></i></div>
-                        <form action="#">
-                            <div class="form-group">
-                                <label class="form-label" for="fullname">Full Name
-                                    <span class="text-danger">*</span>
-                                </label>
-                                <input type="text" class="form-control form-control-lg" name="fullname" placeholder="Full Name">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label" for="email">Email
-                                    <span class="text-danger">*</span>
-                                </label>
-                                <input type="email" class="form-control form-control-lg" name="email" placeholder="Email">
-                            </div>
-                            <button type="submit" name="login" class="btn btn-primary btn-lg w-100 mt-4">Update Profile</button>
-                        </form>
+            <div class="col-lg-3">
+                <?php include('layouts/sidebar.php'); ?>
+                <div class="col-lg-6 mx-auto">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <div class="mb-4"><i class="bi bi-person me-1 text-white rounded-circle h1 bg-dark py-2 px-3"></i></div>
+                            <form action="#">
+                                <div class="form-group">
+                                    <label class="form-label" for="fullname">Full Name
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control form-control-lg" name="fullname" placeholder="Full Name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="email" class="form-control form-control-lg" name="email" placeholder="Email">
+                                </div>
+                                <button type="submit" name="login" class="btn btn-primary btn-lg w-100 mt-4">Update Profile</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@
   </a>
   <a href="index-post.php" class="active list-group-item list-group-item-action"><i class="bi  bi-file-earmark-text me-1"></i> Posts
   </a>
-  <a href="#" class="list-group-item list-group-item-action"> <i class="bi bi-tags me-1"></i> Categories
+  <a href="category/index-category.php" class="list-group-item list-group-item-action"> <i class="bi bi-tags me-1"></i> Categories
   </a>
   <a href="index-users.php" class="list-group-item list-group-item-action"><i class="bi bi-people me-1"></i>Users
   </a>
